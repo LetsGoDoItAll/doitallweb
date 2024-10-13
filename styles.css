@@ -93,6 +93,21 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
+/* Newsletter block */
+.newsletter {
+  width: 18.5em;
+  height: 6em;
+  overflow: hidden;
+  margin: 1em auto 0;
+}
+.newsletter hr {
+  margin-bottom: 0.5em;
+  border-color: #1677be;
+}
+.newsletter h4 {
+  margin-bottom: -3em;
+}
+
 /* Add vendor prefixes for flexbox */
 .container {
   display: -webkit-box;    /* OLD - iOS 6-, Safari 3.1-6 */
