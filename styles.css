@@ -43,7 +43,8 @@ img {
 span, svg {
   vertical-align: middle;
   display: inline-block;
-  margin: 0 0.25em 0 0;
+  /* margin: 0 0.25em 0 0; */
+  margin: 0.25rem;
 }
 
 /* Ensure links are styled consistently */
@@ -159,7 +160,7 @@ main {
   border-radius: 24px; /* More rounded corners */
   padding: 10px; /* Padding inside the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  width: 60%; /* Less wide to ensure centering */
+  width: 28rem; /* Less wide to ensure centering */
   margin: 2em auto 0; /* Center the container */
 }
 
@@ -181,21 +182,27 @@ dl > div {
 }
 
 dt {
+  width: 30%;
+}
+dd {
+  width: 70%;
+}
+dt {
   font-weight: bold; /* Bold labels */
   text-align: right; /* Align labels to the right */
-  width: 50%; /* Labels take up 50% of the width */
+  /* width: 50%; Labels take up 50% of the width */
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
 dd {
   text-align: left; /* Align details to the left */
-  width: 50%; /* Details take up 50% of the width */
+  /* width: 50%; Details take up 50% of the width */
 }
 
 /* Modern button styles for hyperlinks in dt tags */
 dt a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px; /* 10px 20px; */
   font-size: 1em;
   font-weight: bold;
   color: #fff;
@@ -280,20 +287,16 @@ dl {
   width: 100%; /* Full width */
 }
 
-dt, dd {
-  padding: 10px; /* Padding for better spacing */
-}
-
 dt {
   font-weight: bold; /* Bold labels */
   text-align: right; /* Align labels to the right */
-  width: 50%; /* Labels take up 50% of the width */
+   /* width: 50%;Labels take up 50% of the width */
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
 dd {
   text-align: left; /* Align details to the left */
-  width: 50%; /* Details take up 50% of the width */
+  /* width: 50%; Details take up 50% of the width */
 }
 
 /* Ensure dt and dd are in the same row */
@@ -344,15 +347,14 @@ header, footer, dd {
 
 /* Media query for narrow viewports */
 @media (max-width: 600px) {
-  
   dt, dd {
-    width: 100%; /* Full width for both dt and dd */
+    /* width: 100%;Full width for both dt and dd */
     text-align: left; /* Align text to the left */
   }
 
-  .dl-container {
-    width: 90%; /* Expand width to 90% on narrow viewports */
-  }
+  /* E.dl-container {
+    width: 90%; xpand width to 90% on narrow viewports
+  } */
 
   body {
     overflow-x: auto; /* Allow horizontal scrollbar on mobile */
@@ -360,9 +362,20 @@ header, footer, dd {
 }
 
 /* Media query for portrait tablet viewports */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Slightly smaller base font size for mobile */
+    padding: 1rem; /* Add some padding on mobile */
+    background-attachment: fixed; /* Fix background image on mobile */
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller heading size on mobile */
+    text-align: center;
+  }
+
   dt, dd {
-    width: 100%; /* Full width for both dt and dd */
+    /* width: 100%; Full width for both dt and dd */
     text-align: left; /* Align text to the left */
   }
 
@@ -371,22 +384,69 @@ header, footer, dd {
     padding-bottom: 0; /* Add a small padding below dt */
   }
 
+  /* .dl-container {
+    width: 90%; Expand width to 90% on narrow viewports
+  } */
+
+  .emphasis {
+    font-size: 1.75rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
   .dl-container {
-    width: 90%; /* Expand width to 90% on narrow viewports */
+    /* width: 100%; */
+    padding: 0.5rem;
+  }
+
+  /* .social-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  } */
+
+  .link-text {
+    margin-top: 0.5rem;
+  }
+
+  dt a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: x769px) and (max-width: x1024px) {
+  body {
+    padding: 2rem;
+  }
+
+  .dl-container {
+    /* width: 90%; */
+    /* max-width: 800px; */
+    margin: 0 auto;
   }
 }
 
 /* Media query for larger tablet viewports */
-@media (max-width: 1024px) {
+/* @media (max-width: x1024px) {
   .dl-container {
-    width: 90%; /* Expand width to 80% on larger tablet viewports */
+    width: 90%; Expand width to 80% on larger tablet viewports
+  }
+} */
+
+/* Media query for short and narrow browsers */
+@media only screen and (max-width: 600px) {
+  main {
+    padding-top: 150px; /* Increase padding to push content down for short and narrow browsers */
   }
 }
 
-/* Media query for short and narrow browsers */
-@media (max-height: 600px) and (max-width: 600px) {
-  main {
-    padding-top: 150px; /* Increase padding to push content down for short and narrow browsers */
-  }  
+@media only screen and (min-width: 600px) {
+  dt, dd {
+    padding: 10px; /* Padding for better spacing */
+  }
 }
-
