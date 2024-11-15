@@ -33,6 +33,168 @@ body {
   overflow-y: auto; /* Allow vertical scrollbar when needed */
 }
 
+/* Center content of the main tag horizontally and vertically */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 30px); /* Full viewport height minus footer height */
+  text-align: center; /* Center text within main */
+  flex-direction: column; /* Ensure vertical alignment of children */
+  padding-top: 120px; /* Increase padding to push down content below header */
+  padding: 20px; /* Add padding inside the main box */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Subtle shadow for depth */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+/* Header styles */
+header {
+  position: fixed; /* Fix the header position */
+  top: 0;
+  width: 100%; /* Occupy full width */
+  z-index: 1000; /* Ensure header stays on top */
+  display: flex; /* Use flex layout for header */
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100px; /* Set a fixed height for the header */
+}
+
+
+/* Center the page heading */
+h1 {
+}
+
+
+header h1 {
+  text-align: center; /* Center text */
+  font-weight: 900;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Add padding for spacing */
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Position it at the top */
+  width: 100%; /* Full width */
+}
+header h1 span {
+  font-size: 2rem; /* Adjust font size for "Let's Go" */
+  color: rgba(255, 255, 255, 0.6);
+}
+header h1 em {
+  font-family: 'Arial Black';
+  font-size: 2.5rem;
+  text-transform: uppercase !important; /* Capitalize "DO IT ALL" with higher specificity */
+  margin: -0.5em 0;
+}
+header h1 .tagline {
+  font-size: 0.4em; /* Decrease the font size further for tablets and smaller devices */
+  font-weight: 100;
+}
+
+main {
+  padding-top: 100px; /* Add padding to push content below fixed header */
+}
+
+/* Ensure default cursor for header, footer, and dd text */
+header, footer, dd {
+  cursor: default;
+}
+
+/* Style dl content in one block with each dt/dd as a row */
+dl {
+  display: flex; /* Display dl as flex */
+  flex-direction: column; /* Arrange dt/dd pairs in a column */
+  align-items: center; /* Center align items horizontally */
+  width: 100%; /* Full width */
+}
+
+dd {
+  text-align: left; /* Align details to the left */
+  width: 70%;
+}
+
+/* Ensure dt and dd are in the same row */
+dl > div {
+  display: flex; /* Display each dt/dd pair as flex */
+  width: 100%; /* Full width for each row */
+  justify-content: space-between; /* Space between dt and dd */
+  align-items: center; /* Center the content vertically */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+dt {
+  width: 30%;
+  font-weight: bold; /* Bold labels */
+  text-align: right; /* Align details to the right */
+  /* width: 50%; Details take up 50% of the width */
+  /* width: 50%; Labels take up 50% of the width */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+/* Modern button styles for hyperlinks in dt tags */
+dt a {
+  display: inline-block;
+  padding: 10px; /* 10px 20px; */
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+dt a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-45deg);
+  transition: all 0.5s ease;
+}
+dt a:hover::before {
+  left: 100%;
+}
+dt a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+dt a:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure links are styled consistently */
+a {
+  text-decoration: none;
+  color: #007BFF; /* Modern blue color for links */
+  cursor: pointer; /* Use pointer cursor for hyperlinks */
+}
+
+/* Add some basic styling for form elements */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px; /* Padding for better spacing */
+}
+/* Add some basic styling for buttons */
+button {
+  cursor: pointer;
+  background-color: #007BFF; /* Modern blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 /* Ensure images are responsive */
 img {
   max-width: 100%;
@@ -47,66 +209,38 @@ span, svg {
   margin: 0.25rem;
 }
 
-/* Ensure links are styled consistently */
-a {
-  text-decoration: none;
-  color: #007BFF; /* Modern blue color for links */
-  cursor: pointer; /* Use pointer cursor for hyperlinks */
-}
-
-/* Add some basic styling for form elements */
-input, button, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 8px; /* Padding for better spacing */
-}
-
-/* Add some basic styling for buttons */
-button {
-  cursor: pointer;
-  background-color: #007BFF; /* Modern blue background */
-  color: #fff; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for better spacing */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Add some basic styling for lists */
+/* Add some basic styling for lists
 ul, ol {
   list-style: none;
-  padding-left: 20px; /* Indentation for list items */
-}
+  padding-left: 20px;
+} */
 
-/* Add some basic styling for tables */
+/* Add some basic styling for tables
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #fff; /* White background for tables */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-  padding: 12px; /* Increased padding for better spacing */
+  padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-}
+} */
 
-/* Newsletter block */
-.newsletter {
-  width: 18.5em;
-  height: 6em;
-  overflow: hidden;
-  margin: 1em auto 0;
-}
-.newsletter hr {
-  margin-bottom: 0.5em;
-  border-color: #1677be;
-}
-.newsletter h4 {
-  margin-bottom: -3em;
+/* Footer styles */
+footer {
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  bottom: 0;
+  width: 100vw; /* Use full viewport width for header and footer */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center;
+  font-weight: 100; /* Thinner font */
+  font-size: 0.8em; /* Reduced font size */
+  opacity: 0.8; /* 80% opaque text */
+  padding: 2px 0; /* Reduced padding for better spacing */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Add vendor prefixes for flexbox */
@@ -121,6 +255,33 @@ th, td {
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
+/* Container for dl with background and blur effect */
+.dl-container {
+  background: rgba(0, 0, 0, 0.4); /* Black background with 40% opacity */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 24px; /* More rounded corners */
+  padding: 10px; /* Padding inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 24rem; /* Less wide to ensure centering */
+  margin: 2em auto 0; /* Center the container */
+}
+
+/* Newsletter block */
+.newsletter {
+  width: 18.5em;
+  height: 9em;
+  overflow: hidden;
+  margin: 1em auto 0;
+}
+.newsletter hr {
+  margin-bottom: 0.5em;
+  border-color: #1677be;
+}
+.newsletter h4 {
+  margin-bottom: -3em;
+}
+
 
 /* Add vendor prefixes for transitions */
 .transition {
@@ -139,223 +300,12 @@ th, td {
   transform: rotate(45deg);      /* Standard */
 }
 
-/* Center content of the main tag horizontally and vertically */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 30px); /* Full viewport height minus footer height */
-  text-align: center; /* Center text within main */
-  flex-direction: column; /* Ensure vertical alignment of children */
-  padding-top: 120px; /* Increase padding to push down content below header */
-  padding: 20px; /* Add padding inside the main box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-/* Container for dl with background and blur effect */
-.dl-container {
-  background: rgba(0, 0, 0, 0.4); /* Black background with 40% opacity */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-radius: 24px; /* More rounded corners */
-  padding: 10px; /* Padding inside the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  width: 28rem; /* Less wide to ensure centering */
-  margin: 2em auto 0; /* Center the container */
-}
-
-/* Center the dl element */
-dl {
-  display: flex;
-  flex-direction: column; /* Arrange dt/dd pairs in a column */
-  align-items: center; /* Center align items horizontally */
-  width: 100%; /* Full width */
-}
-
-dl > div {
-  display: flex; /* Display each dt/dd pair as flex */
-  width: 100%; /* Full width for each row */
-  justify-content: space-between; /* Space between dt and dd */
-  align-items: center; /* Center the content vertically */
-  padding: 10px; /* Padding for better spacing */
-  flex-wrap: wrap; /* Allow wrapping */
-}
-
-dt {
-  width: 30%;
-}
-dd {
-  width: 70%;
-}
-dt {
-  font-weight: bold; /* Bold labels */
-  text-align: right; /* Align labels to the right */
-  /* width: 50%; Labels take up 50% of the width */
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-dd {
-  text-align: left; /* Align details to the left */
-  /* width: 50%; Details take up 50% of the width */
-}
-
-/* Modern button styles for hyperlinks in dt tags */
-dt a {
-  display: inline-block;
-  padding: 10px; /* 10px 20px; */
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-dt a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transform: skewX(-45deg);
-  transition: all 0.5s ease;
-}
-
-dt a:hover::before {
-  left: 100%;
-}
-
-dt a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-dt a:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer styles */
-footer {
-  position: fixed; /* Fix the footer at the bottom of the viewport */
-  bottom: 0;
-  width: 100vw; /* Use full viewport width for header and footer */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  text-align: center;
-  font-weight: 100; /* Thinner font */
-  font-size: 0.8em; /* Reduced font size */
-  opacity: 0.8; /* 80% opaque text */
-  padding: 2px 0; /* Reduced padding for better spacing */
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Center the page heading */
-h1 {
-  text-align: center; /* Center text */
-  margin-bottom: 20px; /* Add some space below the heading */
-  position: absolute; /* Position it absolutely */
-  top: 20px; /* Position it at the top */
-  width: 100%; /* Full width */
-}
-
-h1 div {
-  font-size: 1.5em; /* Adjust font size for "Let's Go" */
-  font-style: italic !important; /* Italicize "Let's Go" with higher specificity */
-  /* color: rgba(255, 255, 255, 0.5); */
-}
-
-h1 .emphasis {
-  display: inline-block; /* Wrap text in a block */
-  font-size: 2em; /* Increase font size for emphasis */
-  text-transform: uppercase !important; /* Capitalize "DO IT ALL" with higher specificity */
-  font-weight: 900; /* Increase boldness to the maximum */
-  margin: -0.5em 0;
-}
-
-/* Style dl content in one block with each dt/dd as a row */
-dl {
-  display: flex; /* Display dl as flex */
-  flex-direction: column; /* Arrange dt/dd pairs in a column */
-  align-items: center; /* Center align items horizontally */
-  width: 100%; /* Full width */
-}
-
-dt {
-  font-weight: bold; /* Bold labels */
-  text-align: right; /* Align labels to the right */
-   /* width: 50%;Labels take up 50% of the width */
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-dd {
-  text-align: left; /* Align details to the left */
-  /* width: 50%; Details take up 50% of the width */
-}
-
-/* Ensure dt and dd are in the same row */
-dl > div {
-  display: flex; /* Display each dt/dd pair as flex */
-  width: 100%; /* Full width for each row */
-  justify-content: space-between; /* Space between dt and dd */
-  align-items: center; /* Center the content vertically */
-  padding: 10px; /* Padding for better spacing */
-  flex-wrap: wrap; /* Allow wrapping */
-}
-
-/* Header styles */
-header {
-  position: fixed; /* Fix the header position */
-  top: 0;
-  width: 100%; /* Occupy full width */
-  z-index: 1000; /* Ensure header stays on top */
-  display: flex; /* Use flex layout for header */
-  flex-direction: column; /* Arrange children in a column */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 100px; /* Set a fixed height for the header */
-}
-
-header h1 {
-  margin: 0; /* Remove default margin */
-  padding: 10px 0; /* Add padding for spacing */
-}
-
-header h1 div {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-header h1 .tagline {
-  font-size: 0.4em; /* Decrease the font size further for tablets and smaller devices */
-  font-weight: 100;
-}
-
-main {
-  padding-top: 100px; /* Add padding to push content below fixed header */
-}
-
-/* Ensure default cursor for header, footer, and dd text */
-header, footer, dd {
-  cursor: default;
-}
-
 /* Media query for narrow viewports */
 @media (max-width: 600px) {
-  dt, dd {
+  dt {
     /* width: 100%;Full width for both dt and dd */
-    text-align: left; /* Align text to the left */
+    text-align: center;
   }
-
-  /* E.dl-container {
-    width: 90%; xpand width to 90% on narrow viewports
-  } */
-
   body {
     overflow-x: auto; /* Allow horizontal scrollbar on mobile */
   }
@@ -374,22 +324,9 @@ header, footer, dd {
     text-align: center;
   }
 
-  dt, dd {
-    /* width: 100%; Full width for both dt and dd */
-    text-align: left; /* Align text to the left */
-  }
-
   dt {
     margin-bottom: -0.25em; /* Remove space below dt */
     padding-bottom: 0; /* Add a small padding below dt */
-  }
-
-  /* .dl-container {
-    width: 90%; Expand width to 90% on narrow viewports
-  } */
-
-  .emphasis {
-    font-size: 1.75rem;
   }
 
   .tagline {
@@ -398,7 +335,7 @@ header, footer, dd {
   }
 
   .dl-container {
-    /* width: 100%; */
+    width: 24em;
     padding: 0.5rem;
   }
 
@@ -419,13 +356,13 @@ header, footer, dd {
 }
 
 /* Tablet and larger screens */
-@media screen and (min-width: x769px) and (max-width: x1024px) {
+@media screen and (min-width: 769px) {
   body {
     padding: 2rem;
   }
 
   .dl-container {
-    /* width: 90%; */
+    width: 36rem;
     /* max-width: 800px; */
     margin: 0 auto;
   }
