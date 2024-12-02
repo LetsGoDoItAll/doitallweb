@@ -285,11 +285,13 @@ footer {
   margin-top: 40px;
 }
 .support {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .support span {
   position: relative;
   top: -0.6em;
+}
+.thanks {
   color: #6323c9;
 }
 
