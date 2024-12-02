@@ -62,9 +62,9 @@ header {
 }
 
 
-/* Center the page heading */
+/* Center the page heading
 h1 {
-}
+} */
 
 
 header h1 {
@@ -281,7 +281,17 @@ footer {
 .newsletter h4 {
   margin-bottom: -3em;
 }
-
+.discord {
+  margin-top: 40px;
+}
+.support {
+  margin-top: 40px;
+}
+.support span {
+  position: relative;
+  top: -0.6em;
+  color: #6323c9;
+}
 
 /* Add vendor prefixes for transitions */
 .transition {
