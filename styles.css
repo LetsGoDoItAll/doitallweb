@@ -242,6 +242,9 @@ footer {
   padding: 2px 0; /* Reduced padding for better spacing */
   color: rgba(255, 255, 255, 0.6);
 }
+footer strong {
+  margin-right: 3.5em;
+}
 
 /* Add vendor prefixes for flexbox */
 .container {
@@ -267,6 +270,34 @@ footer {
   margin: 2em auto 0; /* Center the container */
 }
 
+/*.icon {
+
+}*/
+.round1, .round2, .round3 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.round00 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+.round0 {
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+}
+.round1 {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+.round2 {
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+}
+.round3 {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
 /* Newsletter block */
 .newsletter {
   width: 18.5em;
@@ -281,18 +312,22 @@ footer {
 .newsletter h4 {
   margin-bottom: -3em;
 }
-/**.discord {
+/*.discord {
   margin-top: 40px;
-}**/
+}*/
 .support {
-  margin-top: 20px;
+  margin: 0.7em 0 0;
 }
 .support span {
   position: relative;
   top: -0.6em;
 }
+.support strong {
+  margin-right: 1em;
+  color: #bbb;
+}
 .thanks {
-  color: #6323c9;
+  color: #fff;
 }
 
 /* Add vendor prefixes for transitions */
@@ -396,6 +431,6 @@ footer {
 
 @media only screen and (min-width: 600px) {
   dt, dd {
-    padding: 10px; /* Padding for better spacing */
+    padding: 0.4em; /* Padding for better spacing */
   }
 }
