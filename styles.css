@@ -110,7 +110,7 @@ dl {
 
 dd {
   text-align: left; /* Align details to the left */
-  width: 70%;
+  width: 75%;
 }
 
 /* Ensure dt and dd are in the same row */
@@ -123,7 +123,7 @@ dl > div {
 }
 
 dt {
-  width: 30%;
+  width: 25%;
   font-weight: bold; /* Bold labels */
   text-align: right; /* Align details to the right */
   /* width: 50%; Details take up 50% of the width */
@@ -266,7 +266,7 @@ footer strong {
   border-radius: 24px; /* More rounded corners */
   padding: 10px; /* Padding inside the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  width: 24rem; /* Less wide to ensure centering */
+  width: 20rem; /* Less wide to ensure centering */
   margin: 2em auto 0; /* Center the container */
 }
 
@@ -381,10 +381,10 @@ footer strong {
     margin: 0.5rem 0;
   }
 
-  .dl-container {
-    width: 24em;
+  /*.dl-container {
+    width: 22em;
     padding: 0.5rem;
-  }
+  }*/
 
   /* .social-link {
     flex-direction: column;
@@ -403,7 +403,7 @@ footer strong {
 }
 
 /* Tablet and larger screens */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   body {
     padding: 2rem;
   }
