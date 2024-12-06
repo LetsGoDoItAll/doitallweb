@@ -80,8 +80,8 @@ header h1 span {
   font-size: 2rem; /* Adjust font size for "Let's Go" */
   color: rgba(255, 255, 255, 0.6);
 }
-header h1 em {
-  font-family: arial black !important;
+header h1 i {
+  font-family: arial black;
   font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase !important; /* Capitalize "DO IT ALL" with higher specificity */
