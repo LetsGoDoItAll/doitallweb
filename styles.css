@@ -111,6 +111,7 @@ dl {
 
 dd {
   text-align: left; /* Align details to the left */
+  line-height: 1.1em;
   width: 75%;
 }
 
