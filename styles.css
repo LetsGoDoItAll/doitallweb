@@ -434,6 +434,6 @@ footer strong {
 
 @media only screen and (min-width: 600px) {
   dt, dd {
-    padding: 0.4em; /* Padding for better spacing */
+    padding: 0.1em; /* Padding for better spacing */
   }
 }
