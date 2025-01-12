@@ -209,6 +209,7 @@ span, svg {
   display: inline-block;
   /* margin: 0 0.25em 0 0; */
   margin: 0.25rem;
+  pointer-events: none;
 }
 
 /* Add some basic styling for lists
