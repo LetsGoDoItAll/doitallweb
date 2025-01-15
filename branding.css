@@ -1,0 +1,32 @@
+/** Branding **/
+
+.branding {
+  white-space: nowrap;
+  color: #fff;
+}
+.branding h1 {
+  text-align: center; /* Center text */
+  font-weight: 900;
+  margin: 0 0 2rem; /* Remove default margin */
+  padding: 0; /* Add padding for spacing */
+  top: 20px; /* Position it at the top */
+  width: 100%; /* Full width */
+}
+.branding h1 span {
+  font-size: 1rem; /* Adjust font size for "Let's Go" */
+  color: var(--light-gray);
+  vertical-align: middle;
+}
+.branding h1 i {
+  font-family: arial black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase !important; /* Capitalize "DO IT ALL" with higher specificity */
+  margin: -0.5em 0;
+}
+.branding h1 .tagline {
+  font-size: 0.8rem; /* Decrease the font size further for tablets and smaller devices */
+  font-weight: 100;
+  margin: -0.5rem;
+  color: #bbb;
+}

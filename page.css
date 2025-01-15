@@ -1,0 +1,171 @@
+/** Page adaptations **/
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Updated to use Roboto */
+  font-size: 18px; /* Increased base font size */
+  line-height: 1.6;
+  background-color: #706c7a; /* Via bottom of clouds */
+  background-image: url('1.8X.jpg'); /* Add background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  overflow-x: hidden; /* Hide horizontal scrollbar by default */
+  overflow-y: auto; /* Allow vertical scrollbar when needed */
+  margin: 0 5rem;
+  padding: 0;
+}
+
+header, main {
+  display: block;
+}
+
+header, footer {
+  color: #fff;
+}
+
+header, h1, h2, footer, .copyright, .player {
+  text-align: center;
+}
+
+header h1 {
+  line-height: 2.5rem;
+}
+header p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+footer {
+  line-height: 1.6rem;
+  padding-bottom: 0.75rem;
+}
+
+article {
+  backdrop-filter: blur(4px);
+  background-color: var(--transp-white);
+  padding: 2rem;
+  height: 100%;
+  border-radius: 3rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+/* Modern tables - https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
+table {
+	display: table;
+  border-spacing: 2px;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: 0;
+	caption-side: bottom;
+}
+thead,
+tfoot {
+	background: var(--light-blue);
+}
+tbody tr:nth-child(even) {
+	background: color-mix(in srgb, var(--light-blue), transparent 60%);
+}
+thead {
+	border-block-end: 2px solid;
+	background: whitesmoke;
+  font-weight: bold;
+}
+thead td {
+  text-align: center;
+  &:first-child {
+    border-top-left-radius: 1rem;
+  }
+  &:last-child {
+    border-top-right-radius: 1rem;
+  }
+}
+tr:last-of-type td {
+  &:first-child {
+    border-bottom-left-radius: 1rem;
+  }
+  &:last-child {
+    border-bottom-right-radius: 1rem;
+  }
+}
+tfoot {
+	border-block: 2px solid;
+	background: whitesmoke;
+}
+th,
+td {
+	border: 1px solid lightgrey;
+	padding: 0.25rem 0.75rem;
+}
+th,
+caption {
+	text-align: start;
+}
+thead th:not(:first-child),
+td {
+	text-align: end;
+}
+
+footer {
+  margin: 0 15%;
+}
+
+/* Responsive width iFrame */
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.player {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.listing {
+  li {
+    list-style-type: none;
+    margin-top: 0.5rem;
+    position: relative;    /* It's needed for setting position to absolute in the next rule. */
+    
+    &::before {
+      content: '❖';
+      position: absolute;
+      left: -1.75rem;          /* Adjust this value so that it appears where you want. */
+      font-size: 1.5rem;    /* Adjust this value so that it appears what size you want. */
+      color: var(--dark-blue);
+    }
+  }
+  p {
+    margin: 0.1rem 3rem 0 0.1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #777;
+
+    small {
+      color: #000;
+      font-weight: bold;
+      font-family: cursive;
+      position: relative;
+      bottom: 0.15rem;
+
+      svg {
+        position: relative;
+        top: 0.15rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: calc(100vw + 5rem);
+  }
+}

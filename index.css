@@ -1,19 +1,7 @@
-/* Import Roboto font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Cross-browser CSS boilerplate */
-
 /* Reset some default browser styles */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  cursor: default; /* Set default cursor for the entire site */
-}
-
-/* Ensure HTML5 elements are styled consistently */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block;
 }
 
 /* Set a base font size and family */
@@ -27,7 +15,8 @@ body {
   background-size: cover; /* Ensure the image covers the entire background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
-  height: 100vh; /* Full viewport height */
+  overflow-x: hidden; /* Hide horizontal scrollbar by default */
+  overflow-y: auto; /* Allow vertical scrollbar when needed */
   margin: 0;
   overflow-x: hidden; /* Hide horizontal scrollbar by default */
   overflow-y: auto; /* Allow vertical scrollbar when needed */
@@ -38,67 +27,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 30px); /* Full viewport height minus footer height */
+  /* height: calc(100vh - 30px); Full viewport height minus footer height */
   text-align: center; /* Center text within main */
   flex-direction: column; /* Ensure vertical alignment of children */
-  padding-top: 120px; /* Increase padding to push down content below header */
-  padding: 20px; /* Add padding inside the main box */
+  /* padding-top: 120px; Increase padding to push down content below header */
+  /* padding: 20px; Add padding inside the main box */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Subtle shadow for depth */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-
-/* Header styles */
-header {
-  /* position: fixed; Fix the header position */
-  top: 0;
-  width: 100%; /* Occupy full width */
-  z-index: 1000; /* Ensure header stays on top */
-  display: flex; /* Use flex layout for header */
-  flex-direction: column; /* Arrange children in a column */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 100px; /* Set a fixed height for the header */
-}
-
-
-/* Center the page heading
-h1 {
-} */
-
-
-header h1 {
-  text-align: center; /* Center text */
-  font-weight: 900;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Add padding for spacing */
-  position: absolute; /* Position it absolutely */
-  top: 20px; /* Position it at the top */
-  width: 100%; /* Full width */
-}
-header h1 span {
-  font-size: 2rem; /* Adjust font size for "Let's Go" */
-  color: rgba(255, 255, 255, 0.6);
-}
-header h1 i {
-  font-family: arial black;
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase !important; /* Capitalize "DO IT ALL" with higher specificity */
-  margin: -0.5em 0;
-}
-header h1 .tagline {
-  font-size: 0.4em; /* Decrease the font size further for tablets and smaller devices */
-  font-weight: 100;
-}
-
-/*main {
-  padding-top: 100px;  Add padding to push content below fixed header 
-}*/
-
-/* Ensure default cursor for header, footer, and dd text */
-header, footer, dd {
-  cursor: default;
 }
 
 /* Style dl content in one block with each dt/dd as a row */
@@ -171,32 +106,6 @@ dt a:active {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure links are styled consistently */
-a {
-  text-decoration: none;
-  color: #007BFF; /* Modern blue color for links */
-  cursor: pointer; /* Use pointer cursor for hyperlinks */
-}
-
-/* Add some basic styling for form elements */
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 8px; /* Padding for better spacing */
-}
-/* Add some basic styling for buttons */
-button {
-  cursor: pointer;
-  background-color: #007BFF; /* Modern blue background */
-  color: #fff; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for better spacing */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
 /* Ensure images are responsive */
 img {
   max-width: 100%;
@@ -231,23 +140,6 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 } */
-
-/* Footer styles */
-footer {
-  position: fixed; /* Fix the footer at the bottom of the viewport */
-  bottom: 0;
-  width: 100vw; /* Use full viewport width for header and footer */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  text-align: center;
-  font-weight: 100; /* Thinner font */
-  font-size: 0.8em; /* Reduced font size */
-  opacity: 0.8; /* 80% opaque text */
-  padding: 2px 0; /* Reduced padding for better spacing */
-  color: rgba(255, 255, 255, 0.6);
-}
-footer strong {
-  margin-right: 3.5em;
-}
 
 /* Add vendor prefixes for flexbox */
 .container {
@@ -310,7 +202,7 @@ footer strong {
 }
 .newsletter hr {
   margin-bottom: 0.5em;
-  border-color: #1677be;
+  border-color: var(--muted-blue);
 }
 .newsletter h4 {
   margin-bottom: -3em;
@@ -408,7 +300,7 @@ footer strong {
 /* Tablet and larger screens */
 @media screen and (min-width: 768px) {
   body {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
   }
 
   .dl-container {
@@ -426,11 +318,11 @@ footer strong {
 } */
 
 /* Media query for short and narrow browsers */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   main {
-    padding-top: 150px; /* Increase padding to push content down for short and narrow browsers */
+    padding-top: 150px; Increase padding to push content down for short and narrow browsers
   }
-}
+} */
 
 @media only screen and (min-width: 600px) {
   dt, dd {

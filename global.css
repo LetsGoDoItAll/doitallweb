@@ -1,0 +1,87 @@
+/** Variables **/
+
+html {
+  
+  --light-gray: rgba(255, 255, 255, 0.6);
+	--light-blue: rgb(169, 203, 254);
+  --active-blue: rgb(151, 190, 249);
+	--dark-blue: rgba(0, 102, 255, 0.5);
+  --modern-blue:  #007BFF;
+  --muted-blue: #1677be;
+  --transp-white: rgba(255, 255, 255, 0.85);
+  --transp-black: rgba(0, 0, 0, 0.5);
+
+  cursor: default;
+}
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Cross-browser CSS boilerplate */
+
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  cursor: default; /* Set default cursor for the entire site */
+}
+
+/* Ensure links are styled consistently */
+a {
+  text-decoration: none;
+  color: var(--modern-blue); /* Modern blue color for links */
+  cursor: pointer; /* Use pointer cursor for hyperlinks */
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}
+
+/* Ensure HTML5 elements are styled consistently */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* Add some basic styling for form elements */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px; /* Padding for better spacing */
+}
+input, textarea {
+  cursor: text;
+}
+/* Add some basic styling for buttons */
+button {
+  cursor: pointer;
+  background-color: var(--modern-blue); /* Modern blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+code {
+  cursor: text;
+  color: var(--muted-blue);
+}
+
+/* Footer styles */
+.copyright {
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  bottom: 0;
+  width: 100vw; /* Use full viewport width for header and footer */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center;
+  font-weight: 100; /* Thinner font */
+  font-size: 0.8em; /* Reduced font size */
+  color: var(--light-gray);
+  opacity: 0.8; /* 80% opaque text */
+  margin: 0;
+  padding: 0.25rem 0; /* Reduced padding for better spacing */
+}
+.copyright strong {
+  margin-right: 3.5em;
+}

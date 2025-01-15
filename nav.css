@@ -1,0 +1,98 @@
+/** Navigation - https://codepen.io/edezekiel/pen/drrQzP **/
+
+nav {
+  backdrop-filter: blur(4px);
+  background-color: var(--transp-black);
+  /**background: #000;**/
+  border: 1px solid var(--dark-blue);
+  border-top: 0 none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(82, 151, 255);
+  padding: .25rem
+}
+
+.nav-links a:hover, .nav-links .active {
+  color: white;
+}
+.nav-links .active {
+  pointer-events: none;
+}
+
+#menu-toggle, .hamburger {
+  display: none;
+}
+
+.hamburger {
+  font-size: 2rem;
+  &:active {
+    color: #fff;
+  }
+}
+#menu-toggle:checked ~ label {
+  color: var(--active-blue); /** menu bars **/
+  position: relative;
+  xright: -2.15rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-links a {
+  flex: 1 0;
+  text-align: center;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+  .hidden-nav {
+    backdrop-filter: blur(4px);
+    background-color: var(--transp-black);
+    /**background: #000;**/
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    height: 2.5rem;
+  }
+  
+  nav {
+    backdrop-filter: blur(4px);
+    background-color: var(--transp-black);
+    /**background: #000;**/
+    color: rgb(82, 151, 255); /** menu bars **/
+    border: 0 none;
+    padding: .5rem;
+    position: fixed;
+    flex: 1;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  /*   when hamburger icon is checked, nav links will pop out */
+  
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
