@@ -132,8 +132,16 @@ iframe {
 }
 
 
-.books :nth-child(2) a {
-  word-break: break-all;
+.books {
+  thead td {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  td:nth-child(2) a {
+    word-break: break-all;
+  }
 }
 
 .listing {
