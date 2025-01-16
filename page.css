@@ -84,7 +84,7 @@ thead td {
     border-top-right-radius: 1rem;
   }
 }
-tr:last-of-type td {
+tr:last-of-type:not(thead) td {
   &:first-child {
     border-bottom-left-radius: 1rem;
   }
@@ -129,18 +129,6 @@ iframe {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-
-.books {
-  thead td {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  td:nth-child(2) a {
-    word-break: break-all;
-  }
 }
 
 .listing {
