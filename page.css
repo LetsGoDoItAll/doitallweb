@@ -143,6 +143,14 @@ iframe {
       color: var(--dark-blue);
     }
   }
+  a .thumbnail {
+    cursor: pointer;
+  }
+  .thumbnail {
+    height: 68px;
+    float: left;
+    margin: 4px 8px 0 2px;
+  }
   p {
     margin: 0.1rem 3rem 0 0.1rem;
     font-size: 1.1rem;
@@ -163,9 +171,33 @@ iframe {
     }
   }
 }
+.listing:not(.articles) a {
+  display: block;
+  margin-right: 3rem;
+  line-height: 1.6rem;
+}
 
 @media screen and (max-width: 768px) {
   body {
-    width: calc(100vw + 5rem);
+    width: calc(100vw - 4rem);
+    margin: 0 2rem;
+  }
+  article {
+    padding: 1rem;
+
+    h2 {
+      margin: 0;
+    }
+    ul {
+      padding-left: 2rem;
+    }
+  }
+  .listing {
+    a, p {
+      margin-right: 1rem;
+    }
+    .thumbnail {
+      margin-right: 5px;
+    }
   }
 }
