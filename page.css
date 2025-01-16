@@ -108,6 +108,10 @@ caption {
 thead th:not(:first-child),
 td {
 	text-align: end;
+
+  &:last-of-type a {
+    white-space: nowrap;
+  }
 }
 
 footer {
