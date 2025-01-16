@@ -49,6 +49,10 @@ article {
   border-radius: 3rem;
   font-size: 1.4rem;
   line-height: 2rem;
+
+  section:first-of-type h2:first-child {
+    margin: 0;
+  }
 }
 
 /* Modern tables - https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
@@ -191,9 +195,6 @@ iframe {
   article {
     padding: 1rem;
 
-    h2 {
-      margin: 0;
-    }
     ul {
       padding-left: 2rem;
     }
