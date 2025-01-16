@@ -52,6 +52,9 @@ article {
 }
 
 /* Modern tables - https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
+.table-scroller {
+  overflow-x: scroll;
+}
 table {
 	display: table;
   border-spacing: 2px;
