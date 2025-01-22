@@ -175,6 +175,7 @@ th, td {
 
   > p:first-of-type, h2 {
     margin: 0 auto;
+    line-height: 1.5rem;
     text-align: center;
     opacity: 0.8;
   }
