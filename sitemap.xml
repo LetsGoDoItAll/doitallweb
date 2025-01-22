@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://letsgodoitall.com/</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/about.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/articles.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/books.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/episodes.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/guests.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/shorts.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/article-creative-breakthroughs.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://letsgodoitall.com/article-grit.html</loc>
+  <lastmod>2025-01-21T21:09:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>
