@@ -179,7 +179,7 @@ th, td {
     text-align: center;
     opacity: 0.8;
   }
-  
+
   h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -358,7 +358,7 @@ th, td {
   }
 
   .body-container {
-    width: 36rem;
+    width: 37rem;
     /* max-width: 800px; */
     margin: 0 auto 0;
     padding: 20px;
