@@ -50,11 +50,18 @@ gtag('config', 'G-8J10W2W59J');
   <h1>
     <span>Let's Go</span> <i>Do It All</i>
     <p class="tagline">unlock your potential 🌟 be everything your heart desires</p> <!-- Add the smaller tagline here -->
-  </h1>
-</header>
+  </h1></header>
+
 <main>
 <div class="body-container">
-  <p>Find us→ <strong title="Tap to Copy" id="branding">@LetsGoDoItAll</strong></p>
+
+<p><strong>Welcome to Do It All</strong> &mdash; Your hub for personal growth, motivation, and success. We empower you with tools and strategies to master your mindset, achieve your goals, and live an extraordinary life. 🌟</p>
+<h2>Explore 𝗺𝗶𝗻𝗱𝗳𝘂𝗹𝗻𝗲𝘀𝘀, 𝗵𝗶𝗴𝗵-𝗽𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝗵𝗮𝗯𝗶𝘁𝘀, and 𝗲𝗺𝗼𝘁𝗶𝗼𝗻𝗮𝗹 𝗶𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 to build confidence, courage, and grit. Unlock your true potential and start thriving today! 💪</h2>
+
+  <p class="find-us">
+    Find us→ <strong title="Tap to Copy" id="branding">@LetsGoDoItAll</strong>
+    <sup id="copychar">⎘</sup>
+  </p>
   <ul>
       <li>
         <dl> 
@@ -214,6 +221,7 @@ gtag('config', 'G-8J10W2W59J');
 
   // Branding copy-to-clipboard
   const branding = document.getElementById('branding');
+  const copychar = document.getElementById('copychar');
   const handle = '@LetsGoDoItAll'
   branding.onclick = () => document.execCommand('copy');
   branding.addEventListener('copy', (event) => {
@@ -221,10 +229,12 @@ gtag('config', 'G-8J10W2W59J');
     if (event.clipboardData) {
       event.clipboardData.setData('text/plain', handle);
       branding.style.cursor = 'grabbing';
-      branding.innerHTML = '<em>Copied!</em> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+      branding.innerHTML = '&nbsp; &nbsp; &nbsp; &nbsp;<em>Copied!</em>&nbsp; &nbsp; &nbsp;'
+      copychar.innerText = ' ☑︎' // Check
       setTimeout(() => {
         branding.style.cursor = 'copy';
         branding.innerHTML = handle;
+        copychar.innerText = '⎘' // Copy
       }, 750)
     }
   });
