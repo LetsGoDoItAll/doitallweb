@@ -13,6 +13,7 @@ body {
   overflow-y: auto; /* Allow vertical scrollbar when needed */
   margin: 0 5rem;
   padding: 0;
+  height: 100vh;
 }
 
 header, main {

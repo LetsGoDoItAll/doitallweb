@@ -6,20 +6,21 @@
 
 /* Set a base font size and family */
 body {
-  font-family: 'Roboto', Arial, sans-serif; /* Updated to use Roboto */
-  font-size: 18px; /* Increased base font size */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.6;
-  background-color: #000; /* Change background to black */
-  color: #fff; /* Change text color to white */
-  background-image: url('1.8X.jpg'); /* Add background image */
-  background-size: cover; /* Ensure the image covers the entire background */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  overflow-x: hidden; /* Hide horizontal scrollbar by default */
-  overflow-y: auto; /* Allow vertical scrollbar when needed */
+  background-color: #000;
+  color: #fff;
+  background-image: url('1.8X.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
-  overflow-x: hidden; /* Hide horizontal scrollbar by default */
-  overflow-y: auto; /* Allow vertical scrollbar when needed */
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 /* Center content of the main tag horizontally and vertically */
@@ -28,89 +29,109 @@ main {
   justify-content: center;
   align-items: center;
   /* height: calc(100vh - 30px); Full viewport height minus footer height */
-  text-align: center; /* Center text within main */
-  flex-direction: column; /* Ensure vertical alignment of children */
+  text-align: center;
+  flex-direction: column;
   /* padding-top: 120px; Increase padding to push down content below header */
   /* padding: 20px; Add padding inside the main box */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Subtle shadow for depth */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-sizing: border-box;
+}
+
+/* Mobile single column */
+ul {
+  columns: 1;
+}
+li {
+  list-style: none;
 }
 
 /* Style dl content in one block with each dt/dd as a row */
 dl {
-  display: flex; /* Display dl as flex */
-  flex-direction: column; /* Arrange dt/dd pairs in a column */
-  align-items: center; /* Center align items horizontally */
-  width: 100%; /* Full width */
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
-dd {
-  text-align: left; /* Align details to the left */
-  line-height: 1.1em;
-  width: 75%;
-}
 
-/* Ensure dt and dd are in the same row */
-dl > div {
-  display: flex; /* Display each dt/dd pair as flex */
-  width: 100%; /* Full width for each row */
-  justify-content: space-between; /* Space between dt and dd */
-  align-items: center; /* Center the content vertically */
-  flex-wrap: wrap; /* Allow wrapping */
+  /* Ensure dt and dd are in the same row */
+  > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 dt {
   width: 25%;
-  font-weight: bold; /* Bold labels */
-  text-align: right; /* Align details to the right */
+  font-weight: bold;
+  text-align: right;
   /* width: 50%; Details take up 50% of the width */
   /* width: 50%; Labels take up 50% of the width */
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
+  
+  /* Modern button styles for hyperlinks in dt tags */
+  a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-45deg);
+      transition: all 0.5s ease;
+    }
+    &:hover::before {
+      left: 100%;
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
-/* Modern button styles for hyperlinks in dt tags */
-dt a {
-  display: inline-block;
-  padding: 10px; /* 10px 20px; */
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-dt a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transform: skewX(-45deg);
-  transition: all 0.5s ease;
-}
-dt a:hover::before {
-  left: 100%;
-}
-dt a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-dt a:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+dd {
+  text-align: left;
+  line-height: 1.1em;
+  width: 75%;
+
+  strong {
+    display: block;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+  }
+
+  small {
+    color: var(--light-gray)
+  }
 }
 
 /* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Rounded corners for images */
+  border-radius: 8px;
 }
 
 span, svg {
@@ -141,33 +162,44 @@ th, td {
   border-bottom: 1px solid #ddd;
 } */
 
-/* Add vendor prefixes for flexbox */
-.container {
-  display: -webkit-box;    /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;     /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;    /* TWEENER - IE 10 */
-  display: -webkit-flex;   /* NEW - Chrome */
-  display: flex;       /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  padding: 20px; /* Padding for better spacing */
-  background-color: #fff; /* White background for containers */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
 /* Container for dl with background and blur effect */
-.dl-container {
-  background: rgba(0, 0, 0, 0.4); /* Black background with 40% opacity */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-radius: 24px; /* More rounded corners */
-  padding: 10px; /* Padding inside the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  width: 20rem; /* Less wide to ensure centering */
-  margin: 0 auto 0; /* Center the container */
+.body-container {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  margin: 0 auto 0;
+
+  p:first-child {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  strong {
+    cursor: copy;
+
+    em {
+      color: var(--muted-blue);
+      cursor: grabbing;
+    }
+  }
 }
 
-/*.icon {
+/* Add vendor prefixes for flexbox */
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-}*/
 .round1, .round2, .round3 {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
@@ -227,19 +259,19 @@ th, td {
 
 /* Add vendor prefixes for transitions */
 .transition {
-  -webkit-transition: all 0.3s ease;  /* Safari */
-  -moz-transition: all 0.3s ease;   /* Firefox 4 */
-  -o-transition: all 0.3s ease;     /* Opera */
-  transition: all 0.3s ease;      /* Standard */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Add vendor prefixes for transforms */
 .transform {
-  -webkit-transform: rotate(45deg);  /* Safari */
-  -moz-transform: rotate(45deg);   /* Firefox 3.5+ */
-  -ms-transform: rotate(45deg);    /* IE 9 */
-  -o-transform: rotate(45deg);     /* Opera */
-  transform: rotate(45deg);      /* Standard */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Media query for narrow viewports */
@@ -249,26 +281,26 @@ th, td {
     text-align: center;
   }
   body {
-    overflow-x: auto; /* Allow horizontal scrollbar on mobile */
+    overflow-x: auto;
   }
 }
 
 /* Media query for portrait tablet viewports */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Slightly smaller base font size for mobile */
-    padding: 1rem; /* Add some padding on mobile */
-    background-attachment: fixed; /* Fix background image on mobile */
+    font-size: 16px;
+    padding: 1rem;
+    background-attachment: fixed;
   }
 
   h1 {
-    font-size: 2rem; /* Smaller heading size on mobile */
+    font-size: 2rem;
     text-align: center;
   }
 
   dt {
-    margin-bottom: -0.25em; /* Remove space below dt */
-    padding-bottom: 0; /* Add a small padding below dt */
+    margin-bottom: -0.25em;
+    padding-bottom: 0;
   }
 
   .tagline {
@@ -276,7 +308,7 @@ th, td {
     margin: 0.5rem 0;
   }
 
-  /*.dl-container {
+  /*.body-container {
     width: 22em;
     padding: 0.5rem;
   }*/
@@ -303,16 +335,21 @@ th, td {
     padding: 0 2rem 2rem 2rem;
   }
 
-  .dl-container {
+  ul {
+    columns: 2;
+  }
+
+  .body-container {
     width: 36rem;
     /* max-width: 800px; */
     margin: 0 auto 0;
+    padding: 20px;
   }
 }
 
 /* Media query for larger tablet viewports */
 /* @media (max-width: x1024px) {
-  .dl-container {
+  .body-container {
     width: 90%; Expand width to 80% on larger tablet viewports
   }
 } */
@@ -326,6 +363,9 @@ th, td {
 
 @media only screen and (min-width: 600px) {
   dt, dd {
-    padding: 0.1em 0.7em 0.1em 0; /* Padding for better spacing */
+    padding: 0.1em 0 0.1em 0;
+  }
+  dd {
+    padding-left: 0.5rem;
   }
 }
