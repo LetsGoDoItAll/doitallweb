@@ -37,7 +37,6 @@ nav {
 #menu-toggle:checked ~ label {
   color: var(--active-blue); /** menu bars **/
   position: relative;
-  xright: -2.15rem;
 }
 
 .nav-links {
