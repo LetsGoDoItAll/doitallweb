@@ -52,8 +52,78 @@ article {
   font-size: 1.4rem;
   line-height: 2rem;
 
+
   section:first-of-type h2:first-child {
     margin: 0;
+  }
+
+  &.about {
+    /*&:after {
+      content: "";
+      display: table;
+      clear: both;
+    }*/
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 4rem;
+    font-size: 1.2rem;
+
+    section {
+      &:first-of-type {
+        flex: calc(55% - 3rem);
+
+        h3 {
+          text-align: center;
+          font-size: 1.8rem;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+      + section {
+        flex: calc(45% - 3rem);
+        margin-left: -2rem;
+        padding-left: 2rem;
+        border-left: 1px solid var(--light-blue);
+      }
+
+      h2 {
+        margin: 0;
+
+        span {
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .peronsal-socials {
+      text-align: center;
+
+      a {
+        padding: 0.25rem;
+        margin: 0 0.75rem;
+        cursor: pointer;
+
+        svg {
+          pointer-events: none;
+        }
+      }
+    }
+
+    .founder {
+      float: right;
+      margin: 2rem 0 0 2rem; 
+      border-radius: 50%;
+      -webkit-shape-outside:circle();
+      shape-outside:circle();
+      background: url(gdibble.jpg);
+      background-size: contain;
+      width: 12rem;
+      height: 12rem;
+    }
   }
 }
 
@@ -179,6 +249,7 @@ iframe {
       svg {
         position: relative;
         top: 0.15rem;
+        pointer-events: none;
       }
     }
   }
