@@ -131,7 +131,7 @@ article {
 
 /* Modern tables - https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
 .table-scroller {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 table {
 	display: table;
