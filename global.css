@@ -68,6 +68,26 @@ code {
   color: var(--muted-blue);
 }
 
+.find-us {
+  margin-bottom: 1rem;
+  opacity: 0.8;
+
+  /* Copy to clipboard character */
+  sup {
+    font-size: 2rem;
+    opacity: 0.7;
+  }
+  
+  strong {
+    font-family: monospace;
+    cursor: copy;
+
+    em {
+      cursor: grabbing;
+    }
+  }
+}
+
 /* Footer styles */
 .copyright {
   position: fixed; /* Fix the footer at the bottom of the viewport */

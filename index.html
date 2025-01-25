@@ -121,13 +121,8 @@
 </script>
 </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8J10W2W59J"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-8J10W2W59J');
-</script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-8J10W2W59J"></script>
+<script defer src="load-ga.min.js"></script>
 
 <body>
 <nav>
@@ -309,33 +304,7 @@ gtag('config', 'G-8J10W2W59J');
 </footer>/-->
 <p class="copyright"><strong title="All Rights Reserved">&copy; DO IT ALL 🌟 All Rights Reserved</strong></p>
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('letsgodoitall', {
-  'type': 'floating-chat',
-  'floating-chat.donateButton.text': 'Support 🫶',
-  'floating-chat.donateButton.background-color': '#794bc4',
-  'floating-chat.donateButton.text-color': '#fff'
-  });
-
-  // Branding copy-to-clipboard
-  const branding = document.getElementById('branding');
-  const copychar = document.getElementById('copychar');
-  const handle = '@LetsGoDoItAll'
-  branding.onclick = () => document.execCommand('copy');
-  branding.addEventListener('copy', (event) => {
-    event.preventDefault();
-    if (event.clipboardData) {
-      event.clipboardData.setData('text/plain', handle);
-      branding.style.cursor = 'grabbing';
-      branding.innerHTML = '&nbsp; &nbsp; &nbsp; &nbsp;<em>Copied!</em>&nbsp; &nbsp; &nbsp;'
-      copychar.innerText = ' ☑︎' // Check
-      setTimeout(() => {
-        branding.style.cursor = 'copy';
-        branding.innerHTML = handle;
-        copychar.innerText = '⎘' // Copy
-      }, 750)
-    }
-  });
-</script>
+<script async src="load-kofi.min.js"></script>
+<script async src="branding-copier.min.js"></script>
 </body>
 </html>

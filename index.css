@@ -186,24 +186,6 @@ th, td {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
-  .find-us {
-    margin-bottom: 1rem;
-    opacity: 0.8;
-
-    /* Copy to clipboard character */
-    sup {
-      font-size: 2rem;
-      opacity: 0.7;
-    }
-  }
-  strong {
-    cursor: copy;
-
-    em {
-      cursor: grabbing;
-    }
-  }
 }
 
 /* Add vendor prefixes for flexbox */
