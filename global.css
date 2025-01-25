@@ -107,6 +107,11 @@ code {
     rgba(0, 0, 0, 0.9)
   );
   pointer-events: none;
+
+  strong {
+    /* Show title on hover */
+    pointer-events: fill;
+  }
 }
 /*.copyright strong {
   margin-right: 3.5em;
