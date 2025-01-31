@@ -5,7 +5,7 @@ body {
   font-size: 18px; /* Increased base font size */
   line-height: 1.6;
   background-color: #706c7a; /* Via bottom of clouds */
-  background-image: url('1.8X.jpg'); /* Add background image */
+  background-image: url('1.8X.webp'); /* Add background image */
   background-size: cover; /* Ensure the image covers the entire background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -121,7 +121,7 @@ article {
       border-radius: 50%;
       -webkit-shape-outside:circle();
       shape-outside:circle();
-      background: url(gdibble.jpg);
+      background: url(gdibble.webp);
       background-size: contain;
       width: 12rem;
       height: 12rem;
