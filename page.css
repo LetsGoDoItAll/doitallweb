@@ -234,6 +234,12 @@ iframe {
     height: 68px;
     float: left;
     margin: 4px 8px 0 2px;
+    transition: transform .2s;
+  }
+  a:hover .thumbnail {
+    transform: scale(4);
+    position: relative;
+    z-index: 1;
   }
   p {
     margin: 0.1rem 3rem 0 0.1rem;
