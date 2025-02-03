@@ -275,6 +275,12 @@ th, td {
   transform: rotate(45deg);
 }
 
+
+/* Right-positioning override */
+.LinkedIn-FollowCompany {
+  right: 1.3rem;
+}
+
 /* Media query for narrow viewports */
 @media (max-width: 600px) {
   dt {
