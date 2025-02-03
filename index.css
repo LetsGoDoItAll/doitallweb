@@ -278,7 +278,8 @@ th, td {
 
 /* Right-positioning override */
 .LinkedIn-FollowCompany {
-  right: 1.3rem;
+  bottom: 1.35rem;
+  right: 1.45rem;
 }
 
 /* Media query for narrow viewports */
