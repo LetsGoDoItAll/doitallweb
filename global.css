@@ -120,8 +120,8 @@ code {
 .LinkedIn-FollowCompany {
   position: sticky;
   bottom: 15px;
-  float: right;
   margin-right: -15px;
+  text-align: right;
   /* Fix top edge */
   iframe {
     clip-path: rect(2px 100% 100% 0);
