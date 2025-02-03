@@ -118,5 +118,8 @@ code {
 }*/
 
 .LinkedIn-FollowCompany {
+  position: sticky;
+  bottom: 15px;
   float: right;
+  margin-right: -15px;
 }
