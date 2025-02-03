@@ -122,4 +122,5 @@ code {
   bottom: 15px;
   float: right;
   margin-right: -15px;
+  clip-path: rect(8px 100% 100% 0 round 4px); /* Fix top edge */
 }
