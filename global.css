@@ -47,6 +47,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
+section ~ hr {
+  margin-top: 1.5em;
+}
+
 /* Add some basic styling for form elements */
 button, input, select, textarea {
   font-family: inherit;
