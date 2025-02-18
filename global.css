@@ -1,7 +1,7 @@
 /** Variables **/
 
 html {
-  
+
   --light-gray: rgba(255, 255, 255, 0.6);
 	--light-blue: rgb(169, 203, 254);
   --active-blue: rgb(151, 190, 249);
@@ -26,13 +26,19 @@ html {
 }
 
 /* Ensure links are styled consistently */
+a, a * {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   color: var(--modern-blue); /* Modern blue color for links */
-  cursor: pointer; /* Use pointer cursor for hyperlinks */
 
   &:hover, &:active {
     text-decoration: underline;
+  }
+
+  strong {
+    cursor: pointer;
   }
 }
 
@@ -77,7 +83,7 @@ code {
     font-size: 2rem;
     opacity: 0.7;
   }
-  
+
   strong {
     font-family: monospace;
     cursor: copy;
