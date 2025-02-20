@@ -29,13 +29,25 @@ header, h1, h2, footer, .copyright, .player {
   text-align: center;
 }
 
-header h1 {
-  line-height: 2.5rem;
-}
-header p {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #aaa;
+header{
+  > img:first-child {
+    display: block;
+    width: 100%;
+    max-width: 768px; /* 3/4 of 1024 */
+    margin: 0 auto 1.5em;
+    border-radius: 10px;
+  }
+
+  h1 {
+    line-height: 2.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #aaa;
+  }
+
 }
 
 footer {
@@ -52,9 +64,16 @@ article {
   font-size: 1.4rem;
   line-height: 2rem;
 
+  section
+  {
+    &:first-of-type h2:first-child {
+      margin: 0;
+    }
 
-  section:first-of-type h2:first-child {
-    margin: 0;
+    > p > a > svg {
+      position: relative;
+      bottom: -0.2rem;
+    }
   }
 
   &.about {
@@ -225,6 +244,14 @@ a:hover .thumbnail {
 }
 
 .listing {
+  &.articles {
+    a:hover .thumbnail {
+      transform: scale(3);
+      position: relative;
+      z-index: 1;
+    }
+  }
+
   li {
     list-style-type: none;
     margin-top: 0.5rem;
@@ -322,7 +349,7 @@ a:hover .thumbnail {
       }
     }
     a:hover .thumbnail {
-      transform: scale(2.2);
+      transform: scale(2);
       position: relative;
       z-index: 1;
     }
