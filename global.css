@@ -11,6 +11,8 @@ html {
   --transp-white: rgba(255, 255, 255, 0.85);
   --transp-black: rgba(0, 0, 0, 0.5);
 
+  --hr-margin: 1.5em;
+
   cursor: default;
 }
 
@@ -47,8 +49,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
+/* Opacity Fade-in */
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 section ~ hr {
-  margin-top: 1.5em;
+  margin-top: var(--hr-margin);
 }
 
 /* Add some basic styling for form elements */

@@ -147,6 +147,22 @@ article, main {
   }
 }
 
+/* Fade-in Related Section */
+hr#related {
+  margin: 0;
+  opacity: 0;
+}
+hr#related.visible {
+  margin-top: var(--hr-margin);
+}
+hr#related ~ section, hr#related.visible {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
 /* Modern tables - https://piccalil.li/blog/styling-tables-the-modern-css-way/ */
 .table-scroller {
   overflow-x: auto;
@@ -432,7 +448,7 @@ a:hover .thumbnail {
     width: calc(100vw - 4rem);
     margin: 0 2rem;
   }
-  article {
+  article, main {
     padding: 1rem;
 
     ul {
