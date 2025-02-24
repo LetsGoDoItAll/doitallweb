@@ -55,7 +55,7 @@ footer {
   padding-bottom: 0.75rem;
 }
 
-article {
+article, main {
   backdrop-filter: blur(4px);
   background-color: var(--transp-white);
   padding: 2rem;
