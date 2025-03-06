@@ -119,9 +119,8 @@ article, main {
     }
 
     .peronsal-socials {
-      margin: -1rem 0 0;
+      margin: 1rem 0;
       text-align: center;
-      color: var(--muted-blue);
 
       a {
         padding: 0.25rem;
