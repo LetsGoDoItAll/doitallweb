@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/SwdALL491Pk" target="_blank">YouTu.be/SwdALL491Pk</a></small></p></center>
-  <p>Explore resilience—the ability to adapt, endure, and thrive through challenges. Uncovers the science of neuroplasticity and emotional regulation. Inspiring stories from Nick Vujicic, Harriet Tubman, and Stephen Hawking. Gain tools from Brené Brown's Rising Strong and Stephen Joseph's What Doesn't Kill Us.</p>
-  <p>Master resilience and turn obstacles into success. Get insights from Nick Vujicic, Harriet Tubman, and Brené Brown.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Explore resilience—the ability to adapt, endure, and thrive through challenges. Uncovers the science of neuroplasticity and emotional regulation. Inspiring stories from Nick Vujicic, Harriet Tubman, and Stephen Hawking. Gain tools from Brené Brown's Rising Strong and Stephen Joseph's What Doesn't Kill Us.</p>
+  <p>Master resilience and turn obstacles into success. Get insights from Nick Vujicic, Harriet Tubman, and Brené Brown.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -233,7 +235,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

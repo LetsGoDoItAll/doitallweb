@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/7DSwTMTxSFg" target="_blank">YouTube.com/shorts/7DSwTMTxSFg</a></small></p></center>
-  <p>Discover the transformative power of small acts of kindness in this clip about cultivating a mindset of kindness. Create positive ripples that change lives including your own!</p>
-  <p>Small acts of kindness create a massive impact. Learn how practicing kindness daily can transform lives—including your own—in ways you never imagined.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover the transformative power of small acts of kindness in this clip about cultivating a mindset of kindness. Create positive ripples that change lives including your own!</p>
+  <p>Small acts of kindness create a massive impact. Learn how practicing kindness daily can transform lives—including your own—in ways you never imagined.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -234,7 +236,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

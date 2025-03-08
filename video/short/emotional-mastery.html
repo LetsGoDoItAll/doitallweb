@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/J49MDOcTyHA" target="_blank">YouTube.com/shorts/J49MDOcTyHA</a></small></p></center>
-  <p>Emotions shape your influence. 💙 Discover how emotional intelligence fuels better decisions, earns respect, and helps you stay strong under pressure.</p>
-  <p>Mastering emotional control is the key to building trust, honor, and respect in every aspect of life. When we learn to manage our reactions, we inspire others and create lasting impact. Emotional resilience shapes our world!</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Emotions shape your influence. 💙 Discover how emotional intelligence fuels better decisions, earns respect, and helps you stay strong under pressure.</p>
+  <p>Mastering emotional control is the key to building trust, honor, and respect in every aspect of life. When we learn to manage our reactions, we inspire others and create lasting impact. Emotional resilience shapes our world!</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -192,7 +194,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

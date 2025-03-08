@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/GsoQbtPn56I" target="_blank">YouTu.be/GsoQbtPn56I</a></small></p></center>
-  <p>Kindness has the power to transform lives, and it starts with simple, everyday acts. Explore the ripple effect of compassion and how small gestures can make a big impact. This episode shares heartwarming stories and easy ways to incorporate kindness into your daily routine.</p>
-  <p>Small acts of kindness create big change. Discover how compassion can transform lives.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Kindness has the power to transform lives, and it starts with simple, everyday acts. Explore the ripple effect of compassion and how small gestures can make a big impact. This episode shares heartwarming stories and easy ways to incorporate kindness into your daily routine.</p>
+  <p>Small acts of kindness create big change. Discover how compassion can transform lives.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -200,7 +202,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

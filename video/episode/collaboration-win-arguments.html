@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/HUecAbV3uGk" target="_blank">YouTu.be/HUecAbV3uGk</a></small></p></center>
-  <p>Discover how adopting a win-win mindset transforms conflicts into opportunities for growth. By focusing on shared interests, emotional intelligence, and creative problem-solving, learn to build trust, foster respect, and achieve mutually beneficial outcomes in personal and professional interactions.</p>
-  <p>Learn negotiation and collaboration skills to resolve conflicts honorably and build stronger relationships.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover how adopting a win-win mindset transforms conflicts into opportunities for growth. By focusing on shared interests, emotional intelligence, and creative problem-solving, learn to build trust, foster respect, and achieve mutually beneficial outcomes in personal and professional interactions.</p>
+  <p>Learn negotiation and collaboration skills to resolve conflicts honorably and build stronger relationships.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -193,7 +195,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

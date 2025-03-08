@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/UXgr0oJx4VI" target="_blank">YouTube.com/shorts/UXgr0oJx4VI</a></small></p></center>
-  <p>In this personal story, I share how a friend struggled with inner confidence and trustworthiness and how small changes transformed his life. Keeping promises to yourself builds self-trust.</p>
-  <p>Building self-trust is the foundation of confidence and success. Discover how keeping small promises to yourself can transform your mindset and life.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>In this personal story, I share how a friend struggled with inner confidence and trustworthiness and how small changes transformed his life. Keeping promises to yourself builds self-trust.</p>
+  <p>Building self-trust is the foundation of confidence and success. Discover how keeping small promises to yourself can transform your mindset and life.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -179,7 +181,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

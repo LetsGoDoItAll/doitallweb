@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/NSfFqg1EMtg" target="_blank">YouTu.be/NSfFqg1EMtg</a></small></p></center>
-  <p>Master the art of persistence and turn dreams into habits that lead to success. From Diana Nyad's historic swim to Bethany Hamilton's triumph over adversity, learn practical strategies backed by science to stay motivated, overcome obstacles, and achieve your long-term goals.</p>
-  <p>Build habits that lead to success! Learn dedication strategies from Diana Nyad, Bethany Hamilton, and psychology research.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Master the art of persistence and turn dreams into habits that lead to success. From Diana Nyad's historic swim to Bethany Hamilton's triumph over adversity, learn practical strategies backed by science to stay motivated, overcome obstacles, and achieve your long-term goals.</p>
+  <p>Build habits that lead to success! Learn dedication strategies from Diana Nyad, Bethany Hamilton, and psychology research.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -226,7 +228,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

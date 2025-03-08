@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/Sb4GPPTEpmI" target="_blank">YouTube.com/shorts/Sb4GPPTEpmI</a></small></p></center>
-  <p>Jessica faced a tough choice: stay safe in a dull job or take the leap to build her dream business. Fear held her back, but courage pushed her forward.</p>
-  <p>The biggest opportunities in life come with fear attached. But what if fear wasn’t a stop sign—just a challenge to overcome? True success begins when you step beyond doubt, embrace risk, and trust in your own strength. Will you take the leap?</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Jessica faced a tough choice: stay safe in a dull job or take the leap to build her dream business. Fear held her back, but courage pushed her forward.</p>
+  <p>The biggest opportunities in life come with fear attached. But what if fear wasn’t a stop sign—just a challenge to overcome? True success begins when you step beyond doubt, embrace risk, and trust in your own strength. Will you take the leap?</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -206,7 +208,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

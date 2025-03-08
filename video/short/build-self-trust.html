@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/sHKzJQuQ41k" target="_blank">YouTube.com/shorts/sHKzJQuQ41k</a></small></p></center>
-  <p>Discover how a single act of kindness can create a ripple effect, transforming lives and spreading positivity. Explore our innate human response to compassion and how small gestures can make a significant impact.</p>
-  <p>Honoring commitments to yourself is just as vital as keeping promises to others. When you stay consistent—whether in goals, habits, or personal growth—you reinforce self-trust, build resilience, and boost confidence.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover how a single act of kindness can create a ripple effect, transforming lives and spreading positivity. Explore our innate human response to compassion and how small gestures can make a significant impact.</p>
+  <p>Honoring commitments to yourself is just as vital as keeping promises to others. When you stay consistent—whether in goals, habits, or personal growth—you reinforce self-trust, build resilience, and boost confidence.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -206,7 +208,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

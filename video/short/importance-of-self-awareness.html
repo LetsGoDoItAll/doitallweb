@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/FwuG-ifG3Y4" target="_blank">YouTube.com/shorts/FwuG-ifG3Y4</a></small></p></center>
-  <p>Why is self-awareness crucial for personal growth? Explore how understanding yourself can be the key to making intentional decisions that align with your true passions & values.</p>
-  <p>Self-awareness is the key to personal growth. Learn how understanding yourself leads to better decisions, stronger relationships, and a purpose-driven life.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Why is self-awareness crucial for personal growth? Explore how understanding yourself can be the key to making intentional decisions that align with your true passions & values.</p>
+  <p>Self-awareness is the key to personal growth. Learn how understanding yourself leads to better decisions, stronger relationships, and a purpose-driven life.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -204,7 +206,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

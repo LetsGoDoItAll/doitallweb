@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/dZmej8BhTYA" target="_blank">YouTube.com/shorts/dZmej8BhTYA</a></small></p></center>
-  <p>A single kind act can set off a powerful chain reaction! See how paying it forward boosts happiness, deepens trust, and creates lasting connections.</p>
-  <p>A single act of kindness can spark a chain reaction that transforms lives! 🌍✨ When you pay it forward, others feel inspired to do the same—boosting happiness, trust, and connection.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>A single kind act can set off a powerful chain reaction! See how paying it forward boosts happiness, deepens trust, and creates lasting connections.</p>
+  <p>A single act of kindness can spark a chain reaction that transforms lives! 🌍✨ When you pay it forward, others feel inspired to do the same—boosting happiness, trust, and connection.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -199,7 +201,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

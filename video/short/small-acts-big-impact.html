@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/aq7BHcJ9YHM" target="_blank">YouTube.com/shorts/aq7BHcJ9YHM</a></small></p></center>
-  <p>Unlock the power of kindness in 40 seconds. Explore how small acts—like a simple smile or a thoughtful word—can create ripples that impact countless lives. Your actions can spark a wave of positivity in the world.</p>
-  <p>Small acts of kindness can change the world. See how a simple smile, kind words, or thoughtful actions create a powerful ripple effect in just 40 seconds.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Unlock the power of kindness in 40 seconds. Explore how small acts—like a simple smile or a thoughtful word—can create ripples that impact countless lives. Your actions can spark a wave of positivity in the world.</p>
+  <p>Small acts of kindness can change the world. See how a simple smile, kind words, or thoughtful actions create a powerful ripple effect in just 40 seconds.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -234,7 +236,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/dKRPn07GHH4" target="_blank">YouTube.com/shorts/dKRPn07GHH4</a></small></p></center>
-  <p>Transform your life with five simple micro-habits designed to boost energy, focus, and positivity. Discover how small daily changes can lead to significant personal and professional growth.</p>
-  <p>Unlock 5 tiny habits that boost energy, focus, and confidence. These proven micro-habits create massive personal and professional growth. Start today!</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Transform your life with five simple micro-habits designed to boost energy, focus, and positivity. Discover how small daily changes can lead to significant personal and professional growth.</p>
+  <p>Unlock 5 tiny habits that boost energy, focus, and confidence. These proven micro-habits create massive personal and professional growth. Start today!</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -161,7 +163,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

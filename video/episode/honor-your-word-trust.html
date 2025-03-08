@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/HHYbZqnNpuw" target="_blank">YouTu.be/HHYbZqnNpuw</a></small></p></center>
-  <p>Explore the power of honoring your commitments and staying true to your word. Discover how integrity and reliability foster trust and create lasting relationships. Through inspiring stories and actionable steps, this episode shows how credibility can elevate both personal and professional success.</p>
-  <p>Trust starts with integrity. Learn how keeping promises strengthens relationships and credibility.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Explore the power of honoring your commitments and staying true to your word. Discover how integrity and reliability foster trust and create lasting relationships. Through inspiring stories and actionable steps, this episode shows how credibility can elevate both personal and professional success.</p>
+  <p>Trust starts with integrity. Learn how keeping promises strengthens relationships and credibility.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -207,7 +209,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

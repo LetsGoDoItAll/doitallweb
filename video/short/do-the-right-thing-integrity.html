@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/ClqfzwVQcBI" target="_blank">YouTube.com/shorts/ClqfzwVQcBI</a></small></p></center>
-  <p>Discover how a single act of kindness can create a ripple effect, transforming lives and spreading positivity. Explore our innate human response to compassion and how small gestures can make a significant impact.</p>
-  <p>Integrity is built in small choices. Will you speak up or stay silent? Explore why honesty shapes your reputation, trust, and personal growth.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover how a single act of kindness can create a ripple effect, transforming lives and spreading positivity. Explore our innate human response to compassion and how small gestures can make a significant impact.</p>
+  <p>Integrity is built in small choices. Will you speak up or stay silent? Explore why honesty shapes your reputation, trust, and personal growth.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -227,7 +229,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

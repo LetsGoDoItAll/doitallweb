@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/uDVE2C36Qeg" target="_blank">YouTu.be/uDVE2C36Qeg</a></small></p></center>
-  <p>Discover proven strategies, inspiring stories, and science-backed methods to unleash your creative potential. Learn from James Cameron's The Terminator, Paul McCartney's Yesterday, and insights from The Creative Act by Rick Rubin and The Extended Mind by Annie Murphy Paul.</p>
-  <p>Unlock creativity with science-backed strategies. Learn from James Cameron, Paul McCartney & top experts on breaking mental blocks.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover proven strategies, inspiring stories, and science-backed methods to unleash your creative potential. Learn from James Cameron's The Terminator, Paul McCartney's Yesterday, and insights from The Creative Act by Rick Rubin and The Extended Mind by Annie Murphy Paul.</p>
+  <p>Unlock creativity with science-backed strategies. Learn from James Cameron, Paul McCartney & top experts on breaking mental blocks.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -191,7 +193,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

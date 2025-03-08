@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/UUvxX539FuI" target="_blank">YouTube.com/shorts/UUvxX539FuI</a></small></p></center>
-  <p>True success isn’t about winning arguments—it’s about winning trust. Discover how active listening and collaboration turn conflicts into growth opportunities.</p>
-  <p>When teamwork turns into a battle of egos, everyone loses. Explore how shifting from competition to collaboration transforms conflicts into opportunities for success.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>True success isn’t about winning arguments—it’s about winning trust. Discover how active listening and collaboration turn conflicts into growth opportunities.</p>
+  <p>When teamwork turns into a battle of egos, everyone loses. Explore how shifting from competition to collaboration transforms conflicts into opportunities for success.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -192,7 +194,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

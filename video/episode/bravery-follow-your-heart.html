@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/sJGeWCURtN0" target="_blank">YouTu.be/sJGeWCURtN0</a></small></p></center>
-  <p>Bravery isn't the absence of fear—it's taking action despite it. Learn how to face fears, make tough decisions, and align with your values. Understand the brain's role in courage, and discover how mindfulness can rewire emotional responses to live authentically.</p>
-  <p>Courage is taking action despite fear. Learn how to follow your heart, face fears, and live authentically.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Bravery isn't the absence of fear—it's taking action despite it. Learn how to face fears, make tough decisions, and align with your values. Understand the brain's role in courage, and discover how mindfulness can rewire emotional responses to live authentically.</p>
+  <p>Courage is taking action despite fear. Learn how to follow your heart, face fears, and live authentically.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -207,7 +209,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

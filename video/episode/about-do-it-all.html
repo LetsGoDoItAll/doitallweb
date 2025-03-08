@@ -122,8 +122,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtu.be/9wywlV0M9e8" target="_blank">YouTu.be/9wywlV0M9e8</a></small></p></center>
-  <p>Welcome to my first episode on DO IT ALL! I'm Gabriel, and in this episode, you'll get to know who I am, the values I stand by, and what you can expect from this channel.</p>
-  <p>Welcome to Do It All! Meet Gabriel, explore the values behind the channel, and discover what’s in store.</p>
 </section>
 <hr id="related" />
 <script>
@@ -133,6 +131,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Welcome to my first episode on DO IT ALL! I'm Gabriel, and in this episode, you'll get to know who I am, the values I stand by, and what you can expect from this channel.</p>
+  <p>Welcome to Do It All! Meet Gabriel, explore the values behind the channel, and discover what’s in store.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -184,7 +186,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

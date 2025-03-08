@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/jIbzTjsX82I" target="_blank">YouTube.com/shorts/jIbzTjsX82I</a></small></p></center>
-  <p>Discover the Ripple Effect of Kindness: ①ne small act of kindness can create ripples that touch countless lives. From a smile to a moment of patience, your actions matter more than you know.</p>
-  <p>One small act of kindness can create ripples of positivity. Discover how simple gestures like a smile or patience can change lives and inspire others.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>Discover the Ripple Effect of Kindness: ①ne small act of kindness can create ripples that touch countless lives. From a smile to a moment of patience, your actions matter more than you know.</p>
+  <p>One small act of kindness can create ripples of positivity. Discover how simple gestures like a smile or patience can change lives and inspire others.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -234,7 +236,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>

@@ -121,8 +121,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
   <center><p><small><a href="https://youtube.com/shorts/Y6Dn7BHjxA8" target="_blank">YouTube.com/shorts/Y6Dn7BHjxA8</a></small></p></center>
-  <p>The CEO of the Cialdini Institute explains how mindset shapes daily decisions. Learn how a calm, focused state can set you up for success. Influence and persuasion principles from the full episode.</p>
-  <p>Dr. Phelps shares how mindset shapes decisions. Learn focus techniques and influence strategies that set you up for success in business and life.</p>
 </section>
 <hr id="related" />
 <script>
@@ -132,6 +130,10 @@ const related = entries[0].target
 if (related.nextElementSibling.nodeName === 'SCRIPT' && entries[0].isIntersecting) {
 related.className = 'visible'
 related.insertAdjacentHTML('afterend', `
+<section>
+  <p>The CEO of the Cialdini Institute explains how mindset shapes daily decisions. Learn how a calm, focused state can set you up for success. Influence and persuasion principles from the full episode.</p>
+  <p>Dr. Phelps shares how mindset shapes decisions. Learn focus techniques and influence strategies that set you up for success in business and life.</p>
+</section>
 <section>
   <h2>Related Resources</h2>
   <ul class="listing-columns">
@@ -207,7 +209,7 @@ related.insertAdjacentHTML('afterend', `
 }
 })
 observer.observe(document.getElementById('related'));
-}, 5555);
+}, 11311);
 </script>
 </main>
 <footer>
