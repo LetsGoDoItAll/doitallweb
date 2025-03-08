@@ -4,6 +4,7 @@ Sitemap: https://letsgodoitall.com/sitemap.xml
 
 Allow: /*.html
 
+Disallow:
 Disallow: /*.css
 Disallow: /*.js
 Disallow: /*.ico
