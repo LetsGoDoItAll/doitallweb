@@ -3,6 +3,10 @@ User-agent: *
 Sitemap: https://letsgodoitall.com/sitemap.xml
 
 Allow: /*.html
+Allow: /video/episode/*.html
+Allow: /video/guest/*.html
+Allow: video/short/*.html
+Allow: /tools/*.pdf
 
 Disallow:
 Disallow: /*.css
