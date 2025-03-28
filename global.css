@@ -149,7 +149,7 @@ code {
 }*/
 
 #adopt-controller-button svg {
-  width: 2rem;
+  width: 2rem !important;
   position: relative;
   top: 0.25rem;
   right: -1.75rem;
