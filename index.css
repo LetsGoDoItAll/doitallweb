@@ -276,7 +276,11 @@ th, td {
 }
 
 
-/* Right-positioning override */
+/* Right-positioning overrides */
+#adopt-controller-button svg {
+  top: 0;
+  right: -1.4rem;
+}
 .LinkedIn-FollowCompany {
   bottom: 1.35rem;
   right: 1.45rem;
