@@ -71,7 +71,7 @@ dt {
   /* width: 50%; Details take up 50% of the width */
   /* width: 50%; Labels take up 50% of the width */
   white-space: nowrap;
-  
+
   /* Modern button styles for hyperlinks in dt tags */
   a {
     display: inline-block;
@@ -79,7 +79,7 @@ dt {
     font-size: 1em;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #6a11cb, rgb(39, 117, 252));
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -87,7 +87,7 @@ dt {
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
+
     &::before {
       content: '';
       position: absolute;
