@@ -148,6 +148,13 @@ code {
   margin-right: 3.5em;
 }*/
 
+#adopt-controller-button svg {
+  width: 2rem;
+  position: relative;
+  top: 0.25rem;
+  right: -1.75rem;
+}
+
 .LinkedIn-FollowCompany {
   position: fixed;
   bottom: 0.95rem;
