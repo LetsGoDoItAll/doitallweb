@@ -149,7 +149,8 @@ code {
 }*/
 
 .floatingchat-container-wrap {
-  bottom: 140px !important;
+  bottom: 134px !important;
+  left: 12.5% !important;
 }
 
 #adopt-controller-button svg {
