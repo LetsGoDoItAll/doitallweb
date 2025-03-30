@@ -165,6 +165,9 @@ th, td {
 
 
 /* Container for dl with background and blur effect */
+.body-container-sides {
+  margin: 0 10%;
+}
 .body-container {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
