@@ -11,14 +11,25 @@ nav {
   z-index: 1;
 }
 
+/* Nav text links */
 .nav-links a {
   text-decoration: none;
   color: rgb(82, 151, 255);
   padding: .25rem
 }
+/* Nav svg [shop] icon */
+.nav-links svg path {
+  fill: #3C9AFF;
+}
 
 .nav-links a:hover, .nav-links .active {
+  /* Text link hover color */
   color: white;
+
+  /* Icon hover color */
+  svg path {
+    fill: #FFFFFF;
+  }
 }
 .nav-links .active {
   pointer-events: none;
@@ -62,7 +73,7 @@ nav {
     padding: .5rem;
     height: 2.5rem;
   }
-  
+
   nav {
     backdrop-filter: blur(4px);
     background-color: var(--transp-black);
@@ -83,13 +94,13 @@ nav {
   .nav-links {
     display: none;
   }
-  
+
   .hamburger {
     display: flex;
   }
-  
+
   /*   when hamburger icon is checked, nav links will pop out */
-  
+
   #menu-toggle:checked ~ .nav-links {
     display: flex;
     flex-direction: column;
