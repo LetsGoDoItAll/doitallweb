@@ -148,11 +148,6 @@ code {
   margin-right: 3.5em;
 }*/
 
-.floatingchat-container-wrap {
-  bottom: 134px !important;
-  left: 12.5% !important;
-}
-
 #adopt-controller-button svg {
   width: 2rem !important;
   position: relative;

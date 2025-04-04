@@ -298,6 +298,10 @@ th, td {
   transform: rotate(45deg);
 }
 
+.floatingchat-container-wrap {
+  bottom: 134px !important;
+  left: 12.5% !important;
+}
 
 /* Right-positioning overrides */
 #adopt-controller-button svg {
