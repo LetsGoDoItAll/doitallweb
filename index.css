@@ -309,8 +309,12 @@ th, td {
   right: -1.4rem;
 }
 .LinkedIn-FollowCompany {
+  bottom: 140px;
+  right: 0.5rem;
+  /* W/o Ads
   bottom: 1.35rem;
   right: 1.45rem;
+  */
 }
 
 /* Media query for narrow viewports */
