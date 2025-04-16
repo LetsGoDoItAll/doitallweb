@@ -310,7 +310,7 @@ th, td {
 }
 .LinkedIn-FollowCompany {
   bottom: 140px;
-  right: 0.5rem;
+  right: 15%;
   /* W/o Ads
   bottom: 1.35rem;
   right: 1.45rem;
@@ -325,6 +325,14 @@ th, td {
   }
   body {
     overflow-x: auto;
+  }
+
+  .floatingchat-container-wrap {
+    left: 4% !important;
+  }
+
+  .LinkedIn-FollowCompany {
+    right: 5%;
   }
 }
 
@@ -344,6 +352,11 @@ th, td {
   dt {
     margin-bottom: -0.25em;
     padding-bottom: 0;
+  }
+
+  dt a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
   }
 
   .tagline {
@@ -366,9 +379,12 @@ th, td {
     margin-top: 0.5rem;
   }
 
-  dt a {
-    font-size: 1.1rem;
-    padding: 0.5rem;
+  .floatingchat-container-wrap {
+    left: 7% !important;
+  }
+
+  .LinkedIn-FollowCompany {
+    right: 8%;
   }
 }
 
