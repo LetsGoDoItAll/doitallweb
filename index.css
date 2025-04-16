@@ -326,14 +326,6 @@ th, td {
   body {
     overflow-x: auto;
   }
-
-  .floatingchat-container-wrap {
-    left: 4% !important;
-  }
-
-  .LinkedIn-FollowCompany {
-    right: 5%;
-  }
 }
 
 /* Media query for portrait tablet viewports */
@@ -378,14 +370,6 @@ th, td {
   .link-text {
     margin-top: 0.5rem;
   }
-
-  .floatingchat-container-wrap {
-    left: 7% !important;
-  }
-
-  .LinkedIn-FollowCompany {
-    right: 8%;
-  }
 }
 
 /* Tablet and larger screens */
@@ -411,6 +395,14 @@ th, td {
     padding-right: 0;
     text-align: right;
   }
+
+  .floatingchat-container-wrap {
+    left: 7% !important;
+  }
+
+  .LinkedIn-FollowCompany {
+    right: 8%;
+  }
 }
 
 /* Media query for larger tablet viewports */
@@ -433,5 +425,13 @@ th, td {
   }
   dd {
     padding-left: 0.5rem;
+  }
+
+  .floatingchat-container-wrap {
+    left: 0.25% !important;
+  }
+
+  .LinkedIn-FollowCompany {
+    right: 0.25%;
   }
 }
