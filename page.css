@@ -325,6 +325,10 @@ a:hover .thumbnail {
     line-height: 1.3rem;
     color: #777;
 
+    &.support {
+      margin-top: 1rem;
+    }
+
     small {
       color: #000;
       font-weight: bold;
@@ -340,7 +344,7 @@ a:hover .thumbnail {
     }
   }
 }
-.listing:not(.articles) a {
+.listing:not(.articles) a:not(.amazon) {
   display: block;
   margin-right: 3rem;
   line-height: 1.6rem;
