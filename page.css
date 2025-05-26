@@ -118,6 +118,27 @@ article, main {
       }
     }
 
+    .amazon-author-page {
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+
+      a {
+        color: transparent;
+        transition: color 1s;
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(240, 144, 0);
+        }
+      }
+
+      img {
+        margin-top: 1rem;
+        width: 242px; /* 40.87% */
+      }
+    }
+
     .boldjourney {
       padding-top: 0;
       line-height: 1.75rem;
