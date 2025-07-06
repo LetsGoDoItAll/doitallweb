@@ -66,9 +66,8 @@ article, main {
 
   section
   {
-    &:first-of-type h2:first-child {
-      margin: 0;
-    }
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 
     > p > a > svg {
       position: relative;
@@ -96,10 +95,6 @@ article, main {
         h3 {
           text-align: center;
           font-size: 1.8rem;
-
-          &:first-child {
-            margin-top: 0;
-          }
         }
       }
       + section {
@@ -110,8 +105,6 @@ article, main {
       }
 
       h2 {
-        margin: 0;
-
         span {
           white-space: nowrap;
         }
@@ -139,18 +132,49 @@ article, main {
       }
     }
 
+    h2.featured-in {
+      margin-bottom: -1rem;
+    }
+    .features {
+      display: flex;
+      flex: 100%;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--light-blue);
+      font-size: 1.1rem;
+
+      > p {
+        flex: calc(33% - 3rem);
+      }
+
+      .hide {
+        font-size: 0.001rem;
+        line-height: 0;
+        color: #fff;
+      }
+    }
+
+    .mariettesnyman {
+      padding-top: 0;
+      line-height: 1.75rem;
+      color: var(--muted-blue);
+
+      img {
+        float: left;
+        margin-right: 0.7rem;
+        height: 4.7rem;
+        margin-top: 0.25rem;
+      }
+    }
+
     .boldjourney {
       padding-top: 0;
       line-height: 1.75rem;
       color: var(--muted-blue);
 
-      a {
-        font-size: 1.5rem;
-      }
-
       img {
         float: left;
-        margin-right: 1rem;
+        margin-right: 0.7rem;
         height: 3rem;
         margin-top: 0.25rem;
       }
