@@ -128,12 +128,13 @@ article, main {
 
       img {
         margin-top: 1rem;
-        width: 242px; /* 40.87% */
+        max-width: 242px; /* 40.87% */
+        width: 100%; /* fit container responsively */
       }
     }
 
-    h2.featured-in {
-      margin-bottom: -1rem;
+    h2.featured-on {
+      margin-bottom: -0.7rem;
     }
     .features {
       display: flex;
@@ -502,6 +503,10 @@ a:hover .thumbnail {
   }
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 
 @media only screen and (min-width: 600px) {
   .listing-columns {
@@ -528,6 +533,9 @@ a:hover .thumbnail {
     .thumbnail {
       margin-right: 5px;
     }
+  }
+  .features > p {
+    flex: 100% !important;
   }
 }
 
