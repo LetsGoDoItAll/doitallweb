@@ -517,6 +517,9 @@ a:hover .thumbnail {
     width: calc(100vw - 4rem);
     margin: 0 2rem;
   }
+  nav {
+    right: 2rem;
+  }
   article, main {
     padding: 1rem;
 
