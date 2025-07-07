@@ -47,7 +47,6 @@ header{
     font-style: italic;
     color: #aaa;
   }
-
 }
 
 footer {
@@ -67,7 +66,6 @@ article, main {
   section
   {
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
 
     > p > a > svg {
       position: relative;
@@ -109,6 +107,10 @@ article, main {
           white-space: nowrap;
         }
       }
+    }
+
+    footer {
+      color: #999;
     }
 
     .amazon-author-page {
@@ -495,12 +497,8 @@ a:hover .thumbnail {
   top: 0.75rem;
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin: 2rem 0;
   font-weight: bold;
-
-  span, a {
-    white-space: nowrap;
-  }
 }
 
 .nowrap {
