@@ -146,6 +146,11 @@ article, main {
       border-bottom: 1px solid var(--light-blue);
       font-size: 1.1rem;
 
+      &.row-1 {
+        margin-bottom: -0.5rem;
+        border-bottom: 0 none
+      }
+
       > p {
         flex: calc(33% - 3rem);
       }
@@ -164,9 +169,9 @@ article, main {
 
       img {
         float: left;
+        margin-top: 0.25rem;
         margin-right: 0.7rem;
         height: 4.7rem;
-        margin-top: 0.25rem;
       }
     }
 
@@ -174,12 +179,29 @@ article, main {
       padding-top: 0;
       line-height: 1.75rem;
       color: var(--muted-blue);
+      text-align: center;
+
+      span {
+        display: inline-block;
+      }
 
       img {
         float: left;
+        margin-top: 0.25rem;
         margin-right: 0.7rem;
         height: 3rem;
-        margin-top: 0.25rem;
+      }
+    }
+
+    .elitecareerpathways {
+      padding-top: 0;
+      line-height: 1.75rem;
+      color: var(--muted-blue);
+
+      img {
+        float: left;
+        margin: -0.3rem 0.9rem -0.1rem 0.35rem;
+        height: 4rem;
       }
     }
 
@@ -537,6 +559,10 @@ a:hover .thumbnail {
   }
   .features > p {
     flex: 100% !important;
+
+    &.amazon-author-page, &.boldjourney {
+      text-align: left;
+    }
   }
 }
 
