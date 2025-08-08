@@ -83,19 +83,13 @@ article, main {
     background-size: contain;
     width: 5rem;
     height: 5rem;
-
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
   }
 
   .by {
     margin-top: 5rem;
 
     .founder {
-      margin: -0.5rem 1.5rem 0 0;
+      margin: -0.5rem 2rem 0 0.5rem;
       transform: scaleX(-1);
     }
 
