@@ -73,6 +73,37 @@ article, main {
     }
   }
 
+  .founder {
+    float: left;
+    margin: 2rem 0 0 2rem;
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+    background: url(gdibble.webp);
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .by {
+    margin-top: 5rem;
+
+    .founder {
+      margin: -0.5rem 1.5rem 0 0;
+      transform: scaleX(-1);
+    }
+
+    .author {
+      text-indent: 0.75rem;
+    }
+  }
+
   &.about {
     /*&:after {
       content: "";
@@ -221,12 +252,6 @@ article, main {
 
     .founder {
       float: right;
-      margin: 2rem 0 0 2rem;
-      border-radius: 50%;
-      -webkit-shape-outside:circle();
-      shape-outside:circle();
-      background: url(gdibble.webp);
-      background-size: contain;
       width: 12rem;
       height: 12rem;
     }
