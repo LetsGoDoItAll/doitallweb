@@ -230,10 +230,11 @@ article, main {
       }
     }
 
-    .peronsal-socials {
+    .all-socials, .peronsal-socials {
       margin: 1rem 0;
       text-align: center;
-
+    }
+    .peronsal-socials {
       a {
         padding: 0.25rem;
         margin: 0 0.75rem;
@@ -250,6 +251,15 @@ article, main {
       height: 12rem;
     }
   }
+}
+
+.flip-h {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+.flip-v {
+  display: inline-block;
+  transform: scale(1, -1);
 }
 
 /* Fade-in Related Section */
