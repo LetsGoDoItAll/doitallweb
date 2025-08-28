@@ -589,7 +589,7 @@ a:hover .thumbnail {
   .features > p {
     flex: 100% !important;
 
-    &.amazon-author-page, &.boldjourney {
+    &.amazon-author-page, &.boldjourney, &.canvasrebel {
       text-align: left;
     }
   }
